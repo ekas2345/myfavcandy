@@ -1,0 +1,116 @@
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #4B0082;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    height: 40px;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Product List Grid */
+.product-list {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    color: #4B0082;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #4B0082;
+    margin-top: 10px;
+}
+
+.size-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.size-button {
+    border: 2px solid #4B0082;
+    background-color: white;
+    color: #4B0082;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.size-button.active {
+    background-color: #4B0082;
+    color: white;
+}
+
+.add-to-cart, .view-product {
+    background-color: #4B0082;
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+}
+
+.add-to-cart:hover, .view-product:hover {
+    background-color: #38006b;
+}
+
+/* Footer */
+.footer {
+    background-color: #4B0082;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
