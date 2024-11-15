@@ -1,0 +1,152 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #5a2d8f, #9a4dc7);
+    color: #fff;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+
+.description {
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 1.1em;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.product-media {
+    position: relative;
+}
+
+.large-image, .thumbnail-video {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.media-gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.media-gallery img, .media-gallery video {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.media-gallery img:hover, .media-gallery video:hover {
+    transform: scale(1.1);
+}
+
+.product-details {
+    max-width: 700px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.collapsible {
+    background-color: #ffd700;
+    color: #5a2d8f;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #5a2d8f;
+    float: right;
+    font-weight: bold;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.content p, .content ul {
+    color: #fff;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #3b1a5f;
+    padding: 30px;
+}
+
+footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+footer input[type="email"] {
+    padding: 12px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+
+footer button {
+    padding: 12px 25px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #ff5a5f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}

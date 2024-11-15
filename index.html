@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Sour Strawberry Strips, plant-based candy with less sugar and no artificial additives.">
+    <title>Sour Strawberry Strips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/logo.avif" alt="Joyride Logo" class="logo">
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Sour Strawberry Strips</h1>
+            <p class="description">Experience the punch of sour and the burst of berry with our all-natural Sour Strawberry Strips. Crafted with plant-based ingredients and 80% less sugar, it's the candy you can feel good about.</p>
+        </section>
+        
+        <section class="product-info">
+            <h2>Product Information</h2>
+            <div class="product-media">
+                <img id="mainDisplay" src="images/strawberry.png" alt="Sour Strawberry Strips" class="large-image">
+                <div class="media-gallery">
+                    <img src="images/strawberry.png" alt="Front view" onclick="showMedia('strawberry.png', 'image')">
+                    <img src="images/RedStrips.png" alt="Side view" onclick="showMedia('RedStrips.png', 'image')">
+                    <img src="images/back.png" alt="Back view" onclick="showMedia('back.png', 'image')">
+                    <img src="images/nutrition.png" alt="Nutrition facts" onclick="showMedia('nutrition.png', 'image')">
+                    <video class="thumbnail-video" onclick="showMedia('candy.mp4', 'video')">
+                        <source src="images/candy.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="product-details">
+                <button class="collapsible">Magically Mighty Macros</button>
+                <div class="content">
+                    <p><strong>Each serving includes:</strong></p>
+                    <ul>
+                        <li>4g of sugar</li>
+                        <li>9g of net carbs</li>
+                        <li>8g of fiber</li>
+                        <li>70 calories</li>
+                        <li>Vegan, plant-based ingredients</li>
+                    </ul>
+                    <p><strong>Excludes:</strong></p>
+                    <ul>
+                        <li>Gelatin or other animal products</li>
+                        <li>Artificial flavors & colors</li>
+                        <li>Artificial sweeteners & preservatives</li>
+                        <li>Sugar alcohols like IMO and maltitol</li>
+                        <li>Bland "diet candy" taste</li>
+                    </ul>
+                </div>
+
+                <button class="collapsible">Better-For-You Ingredients</button>
+                <div class="content">
+                    <p>Our low-sugar candy is crafted with an alchemy of natural, plant-based, and non-GMO ingredients. When we cut out the sugar, we replace it with better alternatives, not artificial sweeteners or unpleasant sugar alcohols.</p>
+                    <p><strong>Ingredients:</strong></p>
+                    <p>Soluble Corn Fiber, Allulose, Wheat Flour, Sugar, Glycerin, Agar, Sodium Citrate, Citric Acid, Natural Flavor, Lactic Acid, Fumaric Acid, Sunflower Lecithin, Sea Salt, Fruit and Vegetable Juice for Color (Carrot, Blackcurrant), Steviol Glycosides.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Join the Candy Crew!</h3>
+        <p>Sign up for exclusive promotions and early access to your favorite candies.</p>
+        <form>
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Sign Me Up</button>
+        </form>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+        </div>
+        <p>&copy; 2024 JOYRIDE - All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
